@@ -31,7 +31,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let result of results"
-              (click)="selectResult(result)"
+              (click)="selectResult(result, resultsContent)"
           >
             <td>{{result.date}}</td>
             <td>{{result.tag}}</td>
@@ -48,3 +48,66 @@
     </div>
   </div>
 </div>
+
+<ng-template #resultsContent let-offcanvas>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">{{selectedResult?.name}}</h5>
+  </div>
+  <div class="offcanvas-body">
+
+    <p>
+      <button type="button" class="btn btn-outline-success"
+              (click)="toggleExpand('success')"
+      >
+        Success ({{selectedResult?.results?.success?.length}})
+      </button>
+
+      <button type="button" class="btn btn-outline-danger"
+              (click)="toggleExpand('failed')"
+              style="margin-left: 1rem"
+      >
+        Failed ({{selectedResult?.results?.failed?.length}})
+      </button>
+
+      <button type="button" class="btn btn-outline-warning"
+              (click)="toggleExpand('errors')"
+              style="margin-left: 1rem"
+      >
+        Errors ({{selectedResult?.results?.errors?.length}})
+      </button>
+    </p>
+
+    <div [ngbCollapse]="!isExpanded('success')">
+      <h6 class="text-success">Success</h6>
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let entry of selectedResult?.results?.success">
+            <td>{{entry}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div  [ngbCollapse]="!isExpanded('failed')">
+      <h6 class="text-danger">Failed</h6>
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let entry of selectedResult?.results?.failed">
+            <td>{{entry}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div  [ngbCollapse]="!isExpanded('errors')">
+      <h6 class="text-warning">Error</h6>
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let entry of selectedResult?.results?.errors">
+            <td>{{entry}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-template>

@@ -12,7 +12,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, TemplateRef } from '@angular/core';
+import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 import { ResultsService, S3GWTestResult } from 'src/app/shared/results.service';
 
@@ -25,8 +26,13 @@ export class ResultsComponent implements OnInit, OnDestroy {
 
   public results: S3GWTestResult[] = [];
   public sub?: Subscription;
+  public selectedResult?: S3GWTestResult;
+  public expandedResultsType: string = "";
 
-  constructor(public resultSvc: ResultsService) { }
+  constructor(
+    private resultSvc: ResultsService,
+    private offcanvasSvc: NgbOffcanvas, 
+  ) { }
 
   ngOnInit(): void {
     this.sub = this.resultSvc.getResults().subscribe({
@@ -43,8 +49,28 @@ export class ResultsComponent implements OnInit, OnDestroy {
     }
   }
 
-  selectResult(result: S3GWTestResult) {
+  selectResult(result: S3GWTestResult, content: TemplateRef<any>) {
     console.log(`select ${result.name}`);
+    this.selectedResult = result;
+    let ref = this.offcanvasSvc.open(content, {
+      position: "end",
+      panelClass: "s3gw-results-offcanvas",
+    });
+    ref.closed.subscribe(() => {
+      this.selectedResult = undefined;
+    });
+  }
+
+  isExpanded(t: string): boolean {
+    return this.expandedResultsType == t;
+  }
+
+  toggleExpand(t: string): void {
+    if (this.expandedResultsType == t) {
+      this.expandedResultsType = "";
+    } else {
+      this.expandedResultsType = t;
+    }
   }
   
 

@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from './core/core.module';
 import { ResultsComponent } from './pages/results/results.component';
 
@@ -18,7 +18,8 @@ import { ResultsComponent } from './pages/results/results.component';
     AppRoutingModule,
     CoreModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    NgbCollapseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
