@@ -12,4 +12,27 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<p>main-layout works!</p>
+<header class="navbar navbar-expand navbar-dark bg-dark px-4 flex-column
+              flex-md-row s3gw-navbar">
+  <a routerLink="/" aria-label="s3gw-status" class="navbar-brand me-md-2 me-0">
+    S3GW dev status
+  </a>
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-nav flex-row ms-md-auto me-4">
+    <ul class="navbar-nav ml-md-auto">
+      <li class="nav-item">
+        <a class="nav-link">Github</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main class="col-12 col-lg-12">
+  <router-outlet></router-outlet>
+</main>
