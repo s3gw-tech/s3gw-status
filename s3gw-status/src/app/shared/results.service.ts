@@ -24,6 +24,7 @@ type GithubResultDesc = {
 
 export type S3GWTestResult = {
   name: string;
+  url: string;
   date: string;
   tag: string;
   sha: string;
@@ -65,6 +66,7 @@ export class ResultsService {
     .subscribe({
       next: (result: S3GWTestResult) => {
         result.name = entry.name;
+        result.url = entry.download_url;
         this.results.push(result);
         this.resultsSubject.next(this.results);
       }

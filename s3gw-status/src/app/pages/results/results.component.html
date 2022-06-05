@@ -51,7 +51,12 @@
 
 <ng-template #resultsContent let-offcanvas>
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title">{{selectedResult?.name}}</h5>
+    <h5 class="offcanvas-title">
+      {{selectedResult?.name}}
+      <a [href]="selectedResult?.url" target="new" class="text-decoration-none">
+        <i class="bi bi-box-arrow-up-right"></i>
+      </a>
+    </h5>
   </div>
   <div class="offcanvas-body">
 
