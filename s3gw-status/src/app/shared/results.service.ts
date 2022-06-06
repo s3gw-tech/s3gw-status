@@ -54,7 +54,7 @@ export class ResultsService {
 
   refreshResults() {
     this.http.get<GithubResultDesc[]>(
-      "https://api.github.com/repos/aquarist-labs/s3gw-status/contents/results"
+      "https://api.github.com/repos/aquarist-labs/s3gw-status/contents/results/s3tests"
     ).subscribe({
       next: (results: GithubResultDesc[]) => {
         this.results = [];
