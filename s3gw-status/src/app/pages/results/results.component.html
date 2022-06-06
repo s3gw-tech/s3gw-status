@@ -29,6 +29,7 @@
         <thead>
           <tr>
             <th scope="col">Date</th>
+            <th scope="col">Who</th>
             <th scope="col">What</th>
             <th scope="col">SHA256</th>
             <th scope="col">Okay</th>
@@ -41,6 +42,7 @@
               (click)="selectResult(result, resultsContent)"
           >
             <td>{{result.date}}</td>
+            <td>{{result.user}}</td>
             <td>{{result.what}}</td>
             <td>{{result.sha}}</td>
             <td>{{result.results.success.length}}</td>
