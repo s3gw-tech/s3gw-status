@@ -5,11 +5,11 @@ import { ResultsComponent } from './pages/results/results.component';
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "results",
+    redirectTo: "s3tests",
     pathMatch: "full",
   },
   {
-    path: "results",
+    path: "s3tests",
     component: ResultsComponent,
   },
 ];
