@@ -28,7 +28,7 @@
         <thead>
           <tr>
             <th scope="col">Date</th>
-            <th scope="col">Tag</th>
+            <th scope="col">What</th>
             <th scope="col">SHA256</th>
             <th scope="col">Okay</th>
             <th scope="col">Failed</th>
@@ -40,7 +40,7 @@
               (click)="selectResult(result, resultsContent)"
           >
             <td>{{result.date}}</td>
-            <td>{{result.tag}}</td>
+            <td>{{result.what}}</td>
             <td>{{result.sha}}</td>
             <td>{{result.results.success.length}}</td>
             <td>{{result.results.failed.length}}</td>
@@ -69,7 +69,9 @@
     <div class="row mb-4">
       <div class="col-5">
         <span class="text-secondary" style="font-size: 0.8rem">
-          {{selectedResult?.tag}}
+          <a [href]="selectedResult?.whatURL" target="new">
+            {{selectedResult?.what}}
+          </a>
         </span>
       </div>
       <div class="col-1"></div>
