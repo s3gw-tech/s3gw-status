@@ -1,7 +1,9 @@
 {
-  "tag": "wip-simplestore",
+  "branch": "",
+  "pr": "8",
   "sha": "1fa776257776cfe5fedd1f81fd1782708d1cddaf",
-  "date": "2022-06-04T12:08:01Z",
+  "date": "2022-06-06T20:12:08Z",
+  "user": "joao",
   "results": {
     "success": [
       "s3tests_boto3.functional.test_headers.test_object_create_bad_md5_invalid_short",
