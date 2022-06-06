@@ -41,7 +41,7 @@
           <tr *ngFor="let result of results"
               (click)="selectResult(result, resultsContent)"
           >
-            <td>{{result.date}}</td>
+            <td>{{result.date|date:'yyyy-MM-dd HH:mm:ss'}}</td>
             <td>{{result.user}}</td>
             <td>{{result.what}}</td>
             <td>{{result.sha}}</td>
