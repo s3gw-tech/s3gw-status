@@ -22,21 +22,16 @@ type GithubResultDesc = {
   download_url: string;
 };
 
+export type S3Test = {
+  name: string;
+  result: string;
+  time: string;
+};
+
 export type S3GWTestResult = {
   name: string;
   url: string;
-  what: string;
-  whatURL: string;
-  date: string;
-  branch: string;
-  pr: string;
-  sha: string;
-  user: string;
-  results: {
-    success: string[];
-    failed: string[];
-    errors: string[];
-  };
+  tests: S3Test[];
 };
 
 @Injectable({
@@ -71,15 +66,6 @@ export class ResultsService {
       next: (result: S3GWTestResult) => {
         result.name = entry.name;
         result.url = entry.download_url;
-        if (!!result.branch && result.branch.length > 0) {
-          const b = result.branch;
-          result.what = `${b}@aquarist-labs/ceph`;
-          result.whatURL = `https://github.com/aquarist-labs/ceph/tree/${b}`;
-        } else if (!!result.pr && result.pr.length > 0) {
-          const pr = result.pr;
-          result.what = `aquarist-labs/ceph#${pr}`;
-          result.whatURL = `https://github.com/aquarist-labs/ceph/pull/${pr}`;
-        }
         this.results.push(result);
         this.resultsSubject.next(this.results);
       }

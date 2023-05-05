@@ -16,6 +16,8 @@ import { Component, OnDestroy, OnInit, TemplateRef } from '@angular/core';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 import { ResultsService, S3GWTestResult } from 'src/app/shared/results.service';
+import { SuccessPipe } from 'src/app/shared/success.pipe';
+import { FailurePipe } from 'src/app/shared/failure.pipe';
 
 @Component({
   selector: 's3gw-results',
@@ -31,7 +33,7 @@ export class ResultsComponent implements OnInit, OnDestroy {
 
   constructor(
     private resultSvc: ResultsService,
-    private offcanvasSvc: NgbOffcanvas, 
+    private offcanvasSvc: NgbOffcanvas,
   ) { }
 
   ngOnInit(): void {
@@ -72,6 +74,4 @@ export class ResultsComponent implements OnInit, OnDestroy {
       this.expandedResultsType = t;
     }
   }
-  
-
 }

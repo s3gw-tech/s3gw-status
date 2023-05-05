@@ -28,26 +28,20 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <th scope="col">Date</th>
-            <th scope="col">Who</th>
-            <th scope="col">What</th>
-            <th scope="col">SHA256</th>
-            <th scope="col">Okay</th>
+            <th scope="col">Name</th>
+            <th scope="col">Url</th>
+            <th scope="col">Success</th>
             <th scope="col">Failed</th>
-            <th scope="col">Error</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let result of results"
               (click)="selectResult(result, resultsContent)"
           >
-            <td>{{result.date|date:'yyyy-MM-dd HH:mm:ss'}}</td>
-            <td>{{result.user}}</td>
-            <td>{{result.what}}</td>
-            <td>{{result.sha}}</td>
-            <td>{{result.results.success.length}}</td>
-            <td>{{result.results.failed.length}}</td>
-            <td>{{result.results.errors.length}}</td>
+            <td>{{result.name}}</td>
+            <td>{{result.url}}</td>
+            <td>{{result.tests | success }}</td>
+            <td>{{result.tests | failure }}</td>
           </tr>
         </tbody>
       </table>
@@ -69,42 +63,18 @@
   </div>
   <div class="offcanvas-body">
 
-    <div class="row mb-4">
-      <div class="col-5">
-        <span class="text-secondary" style="font-size: 0.8rem">
-          <a [href]="selectedResult?.whatURL" target="new">
-            {{selectedResult?.what}}
-          </a>
-        </span>
-      </div>
-      <div class="col-1"></div>
-      <div class="col-5">
-        <span class="font-monospace text-secondary" style="font-size: 0.8rem">
-          {{selectedResult?.sha}}
-        </span>
-      </div>
-      <div class="col-1"></div>
-    </div>
-
     <p>
       <button type="button" class="btn btn-outline-success"
               (click)="toggleExpand('success')"
       >
-        Success ({{selectedResult?.results?.success?.length}})
+        Success ({{selectedResult?.tests | success}})
       </button>
 
       <button type="button" class="btn btn-outline-danger"
               (click)="toggleExpand('failed')"
               style="margin-left: 1rem"
       >
-        Failed ({{selectedResult?.results?.failed?.length}})
-      </button>
-
-      <button type="button" class="btn btn-outline-warning"
-              (click)="toggleExpand('errors')"
-              style="margin-left: 1rem"
-      >
-        Errors ({{selectedResult?.results?.errors?.length}})
+        Failed ({{selectedResult?.tests | failure}})
       </button>
     </p>
 
@@ -112,8 +82,10 @@
       <h6 class="text-success">Success</h6>
       <table class="table">
         <tbody>
-          <tr *ngFor="let entry of selectedResult?.results?.success">
-            <td>{{entry}}</td>
+          <tr *ngFor="let entry of selectedResult?.tests">
+            <td *ngIf="entry.result == 'success'">
+              {{entry.name}} ({{entry.time}}s)
+            </td>
           </tr>
         </tbody>
       </table>
@@ -123,19 +95,10 @@
       <h6 class="text-danger">Failed</h6>
       <table class="table">
         <tbody>
-          <tr *ngFor="let entry of selectedResult?.results?.failed">
-            <td>{{entry}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div  [ngbCollapse]="!isExpanded('errors')">
-      <h6 class="text-warning">Error</h6>
-      <table class="table">
-        <tbody>
-          <tr *ngFor="let entry of selectedResult?.results?.errors">
-            <td>{{entry}}</td>
+          <tr *ngFor="let entry of selectedResult?.tests">
+            <td *ngIf="entry.result == 'failure'">
+              {{entry.name}} ({{entry.time}}s)
+            </td>
           </tr>
         </tbody>
       </table>
