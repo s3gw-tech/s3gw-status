@@ -1,0 +1,1846 @@
+{
+  "tests": [
+    {
+      "name": "test_bucket_listv2_delimiter_empty",
+      "result": "success",
+      "slot": "21",
+      "time": "2.891572297"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_dot",
+      "result": "success",
+      "slot": "17",
+      "time": "1.011657659"
+    },
+    {
+      "name": "test_bucket_list_delimiter_none",
+      "result": "success",
+      "slot": "22",
+      "time": "1.185786048"
+    },
+    {
+      "name": "test_bucket_list_delimiter_whitespace",
+      "result": "success",
+      "slot": "14",
+      "time": "1.357066658"
+    },
+    {
+      "name": "test_bucket_list_delimiter_unreadable",
+      "result": "success",
+      "slot": "18",
+      "time": "3.408148272"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_unreadable",
+      "result": "success",
+      "slot": "19",
+      "time": "3.468936471"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_basic",
+      "result": "success",
+      "slot": "30",
+      "time": "1.471150917"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_percentage",
+      "result": "success",
+      "slot": "13",
+      "time": "1.513036577"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_alt",
+      "result": "success",
+      "slot": "11",
+      "time": "3.536243854"
+    },
+    {
+      "name": "test_bucket_list_delimiter_basic",
+      "result": "success",
+      "slot": "4",
+      "time": "1.720140256"
+    },
+    {
+      "name": "test_bucket_listv2_fetchowner_notempty",
+      "result": "success",
+      "slot": "24",
+      "time": "3.106999784"
+    },
+    {
+      "name": "test_bucket_list_delimiter_not_exist",
+      "result": "success",
+      "slot": "27",
+      "time": "3.701619160"
+    },
+    {
+      "name": "test_bucket_list_encoding_basic",
+      "result": "success",
+      "slot": "7",
+      "time": "2.254700112"
+    },
+    {
+      "name": "test_bucket_listv2_fetchowner_defaultempty",
+      "result": "success",
+      "slot": "25",
+      "time": "2.421980581"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_not_exist",
+      "result": "success",
+      "slot": "28",
+      "time": "1.483383258"
+    },
+    {
+      "name": "test_bucket_list_delimiter_empty",
+      "result": "success",
+      "slot": "20",
+      "time": "4.515059109"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_whitespace",
+      "result": "success",
+      "slot": "15",
+      "time": "1.544525543"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_none",
+      "result": "success",
+      "slot": "23",
+      "time": "1.569712091"
+    },
+    {
+      "name": "test_bucket_list_distinct",
+      "result": "success",
+      "slot": "2",
+      "time": "1.599448445"
+    },
+    {
+      "name": "test_bucket_list_prefix_basic",
+      "result": "success",
+      "slot": "29",
+      "time": "1.600135831"
+    },
+    {
+      "name": "test_bucket_list_delimiter_dot",
+      "result": "success",
+      "slot": "16",
+      "time": "1.477968613"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_basic",
+      "result": "success",
+      "slot": "5",
+      "time": "2.317154527"
+    },
+    {
+      "name": "test_bucket_listv2_delimiter_prefix_ends_with_delimiter",
+      "result": "success",
+      "slot": "8",
+      "time": "1.419155298"
+    },
+    {
+      "name": "test_bucket_listv2_encoding_basic",
+      "result": "success",
+      "slot": "6",
+      "time": "1.382299656"
+    },
+    {
+      "name": "test_bucket_list_delimiter_percentage",
+      "result": "success",
+      "slot": "12",
+      "time": "1.516595387"
+    },
+    {
+      "name": "test_bucket_list_delimiter_alt",
+      "result": "success",
+      "slot": "10",
+      "time": ".835756350"
+    },
+    {
+      "name": "test_bucket_listv2_fetchowner_empty",
+      "result": "success",
+      "slot": "26",
+      "time": ".500951468"
+    },
+    {
+      "name": "test_bucket_list_empty",
+      "result": "success",
+      "slot": "1",
+      "time": ".636233370"
+    },
+    {
+      "name": "test_bucket_list_delimiter_prefix_ends_with_delimiter",
+      "result": "success",
+      "slot": "9",
+      "time": ".879955304"
+    },
+    {
+      "name": "test_bucket_list_prefix_alt",
+      "result": "success",
+      "slot": "21",
+      "time": ".956409087"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_alt",
+      "result": "success",
+      "slot": "14",
+      "time": "1.393168704"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_empty",
+      "result": "success",
+      "slot": "22",
+      "time": "1.431362783"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_none",
+      "result": "success",
+      "slot": "30",
+      "time": "1.401361467"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_not_exist",
+      "result": "success",
+      "slot": "18",
+      "time": ".862886364"
+    },
+    {
+      "name": "test_bucket_list_prefix_empty",
+      "result": "success",
+      "slot": "17",
+      "time": "1.866531218"
+    },
+    {
+      "name": "test_bucket_list_prefix_none",
+      "result": "success",
+      "slot": "11",
+      "time": "1.883958979"
+    },
+    {
+      "name": "test_bucket_list_prefix_unreadable",
+      "result": "success",
+      "slot": "4",
+      "time": ".996285512"
+    },
+    {
+      "name": "test_bucket_list_prefix_not_exist",
+      "result": "success",
+      "slot": "19",
+      "time": "1.067447994"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_delimiter_alt",
+      "result": "success",
+      "slot": "27",
+      "time": "1.677431149"
+    },
+    {
+      "name": "test_bucket_list_prefix_delimiter_alt",
+      "result": "success",
+      "slot": "25",
+      "time": "1.693493494"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_delimiter_basic",
+      "result": "success",
+      "slot": "24",
+      "time": "1.851292667"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_unreadable",
+      "result": "success",
+      "slot": "13",
+      "time": ".907555136"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_delimiter_prefix_not_exist",
+      "result": "success",
+      "slot": "28",
+      "time": "1.794814161"
+    },
+    {
+      "name": "test_bucket_list_prefix_delimiter_basic",
+      "result": "success",
+      "slot": "7",
+      "time": ".667913443"
+    },
+    {
+      "name": "test_bucket_list_prefix_delimiter_prefix_not_exist",
+      "result": "success",
+      "slot": "20",
+      "time": "1.101585839"
+    },
+    {
+      "name": "test_bucket_list_prefix_delimiter_delimiter_not_exist",
+      "result": "success",
+      "slot": "2",
+      "time": "1.148247689"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_delimiter_delimiter_not_exist",
+      "result": "success",
+      "slot": "15",
+      "time": "1.187105399"
+    },
+    {
+      "name": "test_bucket_listv2_prefix_delimiter_prefix_delimiter_not_exist",
+      "result": "success",
+      "slot": "23",
+      "time": ".733280540"
+    },
+    {
+      "name": "test_bucket_list_maxkeys_none",
+      "result": "success",
+      "slot": "8",
+      "time": "1.047106257"
+    },
+    {
+      "name": "test_bucket_list_prefix_delimiter_prefix_delimiter_not_exist",
+      "result": "success",
+      "slot": "29",
+      "time": "1.071194204"
+    },
+    {
+      "name": "test_bucket_listv2_maxkeys_none",
+      "result": "success",
+      "slot": "16",
+      "time": "1.109649450"
+    },
+    {
+      "name": "test_bucket_list_marker_empty",
+      "result": "success",
+      "slot": "6",
+      "time": ".723085223"
+    },
+    {
+      "name": "test_bucket_list_marker_none",
+      "result": "success",
+      "slot": "5",
+      "time": ".747743279"
+    },
+    {
+      "name": "test_bucket_list_marker_unreadable",
+      "result": "success",
+      "slot": "12",
+      "time": "1.215014826"
+    },
+    {
+      "name": "test_bucket_listv2_continuationtoken_empty",
+      "result": "success",
+      "slot": "10",
+      "time": "1.557277847"
+    },
+    {
+      "name": "test_bucket_listv2_startafter_unreadable",
+      "result": "success",
+      "slot": "26",
+      "time": ".820707345"
+    },
+    {
+      "name": "test_bucket_list_return_data_versioning",
+      "result": "success",
+      "slot": "1",
+      "time": ".961110361"
+    },
+    {
+      "name": "test_bucket_listv2_objects_anonymous",
+      "result": "success",
+      "slot": "21",
+      "time": "1.571450170"
+    },
+    {
+      "name": "test_bucket_list_objects_anonymous",
+      "result": "success",
+      "slot": "9",
+      "time": ".738997391"
+    },
+    {
+      "name": "test_bucket_list_objects_anonymous_fail",
+      "result": "success",
+      "slot": "14",
+      "time": ".953377692"
+    },
+    {
+      "name": "test_bucket_listv2_objects_anonymous_fail",
+      "result": "success",
+      "slot": "22",
+      "time": "1.992545070"
+    },
+    {
+      "name": "test_bucket_notexist",
+      "result": "success",
+      "slot": "30",
+      "time": "1.145956036"
+    },
+    {
+      "name": "test_bucketv2_notexist",
+      "result": "success",
+      "slot": "11",
+      "time": ".776350945"
+    },
+    {
+      "name": "test_bucket_delete_notexist",
+      "result": "success",
+      "slot": "18",
+      "time": ".958900868"
+    },
+    {
+      "name": "test_bucket_concurrent_set_canned_acl",
+      "result": "success",
+      "slot": "19",
+      "time": "1.354910750"
+    },
+    {
+      "name": "test_bucket_delete_nonempty",
+      "result": "success",
+      "slot": "17",
+      "time": "1.362272427"
+    },
+    {
+      "name": "test_object_write_to_nonexist_bucket",
+      "result": "success",
+      "slot": "4",
+      "time": "1.086599910"
+    },
+    {
+      "name": "test_bucket_create_delete",
+      "result": "success",
+      "slot": "24",
+      "time": ".744448562"
+    },
+    {
+      "name": "test_object_read_not_exist",
+      "result": "success",
+      "slot": "13",
+      "time": ".935933088"
+    },
+    {
+      "name": "test_multi_object_delete",
+      "result": "success",
+      "slot": "27",
+      "time": ".944444162"
+    },
+    {
+      "name": "test_multi_objectv2_delete",
+      "result": "success",
+      "slot": "25",
+      "time": "2.040775059"
+    },
+    {
+      "name": "test_object_head_zero_bytes",
+      "result": "success",
+      "slot": "28",
+      "time": "1.270885598"
+    },
+    {
+      "name": "test_object_write_check_etag",
+      "result": "success",
+      "slot": "7",
+      "time": "2.285078474"
+    },
+    {
+      "name": "test_object_write_cache_control",
+      "result": "success",
+      "slot": "20",
+      "time": "1.094476499"
+    },
+    {
+      "name": "test_object_write_expires",
+      "result": "success",
+      "slot": "2",
+      "time": "1.121544302"
+    },
+    {
+      "name": "test_object_write_read_update_read_delete",
+      "result": "success",
+      "slot": "15",
+      "time": "1.156285373"
+    },
+    {
+      "name": "test_object_set_get_metadata_none_to_good",
+      "result": "success",
+      "slot": "23",
+      "time": "1.367364929"
+    },
+    {
+      "name": "test_object_set_get_metadata_none_to_empty",
+      "result": "success",
+      "slot": "29",
+      "time": "1.302902558"
+    },
+    {
+      "name": "test_object_metadata_replaced_on_put",
+      "result": "success",
+      "slot": "16",
+      "time": "1.313626002"
+    },
+    {
+      "name": "test_object_set_get_metadata_overwrite_to_empty",
+      "result": "success",
+      "slot": "8",
+      "time": "1.353142328"
+    },
+    {
+      "name": "test_object_write_file",
+      "result": "success",
+      "slot": "5",
+      "time": "1.630209387"
+    },
+    {
+      "name": "test_post_object_anonymous_request",
+      "result": "success",
+      "slot": "6",
+      "time": ".994053472"
+    },
+    {
+      "name": "test_post_object_authenticated_request",
+      "result": "success",
+      "slot": "12",
+      "time": "1.034103975"
+    },
+    {
+      "name": "test_post_object_authenticated_no_content_type",
+      "result": "success",
+      "slot": "10",
+      "time": "1.135334938"
+    },
+    {
+      "name": "test_post_object_authenticated_request_bad_access_key",
+      "result": "success",
+      "slot": "1",
+      "time": "1.124002589"
+    },
+    {
+      "name": "test_post_object_set_success_code",
+      "result": "success",
+      "slot": "26",
+      "time": "1.162820787"
+    },
+    {
+      "name": "test_post_object_upload_larger_than_chunk",
+      "result": "success",
+      "slot": "21",
+      "time": "1.466034796"
+    },
+    {
+      "name": "test_post_object_set_key_from_filename",
+      "result": "success",
+      "slot": "14",
+      "time": "1.507543153"
+    },
+    {
+      "name": "test_post_object_set_invalid_success_code",
+      "result": "success",
+      "slot": "9",
+      "time": ".625193411"
+    },
+    {
+      "name": "test_post_object_escaped_field_values",
+      "result": "success",
+      "slot": "11",
+      "time": "1.424961112"
+    },
+    {
+      "name": "test_post_object_ignored_header",
+      "result": "success",
+      "slot": "30",
+      "time": "1.430640427"
+    },
+    {
+      "name": "test_post_object_invalid_signature",
+      "result": "success",
+      "slot": "19",
+      "time": "1.081264759"
+    },
+    {
+      "name": "test_post_object_success_redirect_action",
+      "result": "success",
+      "slot": "18",
+      "time": "1.185494387"
+    },
+    {
+      "name": "test_post_object_case_insensitive_condition_fields",
+      "result": "success",
+      "slot": "22",
+      "time": "1.580011567"
+    },
+    {
+      "name": "test_post_object_no_key_specified",
+      "result": "success",
+      "slot": "24",
+      "time": ".415809013"
+    },
+    {
+      "name": "test_post_object_invalid_date_format",
+      "result": "success",
+      "slot": "4",
+      "time": ".469722464"
+    },
+    {
+      "name": "test_post_object_invalid_access_key",
+      "result": "success",
+      "slot": "17",
+      "time": ".496223961"
+    },
+    {
+      "name": "test_post_object_missing_signature",
+      "result": "success",
+      "slot": "13",
+      "time": ".634905244"
+    },
+    {
+      "name": "test_post_object_user_specified_header",
+      "result": "success",
+      "slot": "28",
+      "time": "1.463969622"
+    },
+    {
+      "name": "test_post_object_missing_policy_condition",
+      "result": "success",
+      "slot": "27",
+      "time": "1.466339920"
+    },
+    {
+      "name": "test_post_object_request_missing_policy_specified_field",
+      "result": "success",
+      "slot": "25",
+      "time": ".610401442"
+    },
+    {
+      "name": "test_post_object_condition_is_case_sensitive",
+      "result": "success",
+      "slot": "7",
+      "time": ".633666929"
+    },
+    {
+      "name": "test_post_object_expired_policy",
+      "result": "success",
+      "slot": "2",
+      "time": ".448000741"
+    },
+    {
+      "name": "test_post_object_invalid_request_field_value",
+      "result": "success",
+      "slot": "15",
+      "time": ".461158976"
+    },
+    {
+      "name": "test_post_object_expires_is_case_sensitive",
+      "result": "success",
+      "slot": "20",
+      "time": ".471466299"
+    },
+    {
+      "name": "test_post_object_missing_expires_condition",
+      "result": "success",
+      "slot": "23",
+      "time": ".728781388"
+    },
+    {
+      "name": "test_post_object_missing_conditions_list",
+      "result": "success",
+      "slot": "8",
+      "time": "1.158211082"
+    },
+    {
+      "name": "test_post_object_missing_content_length_argument",
+      "result": "success",
+      "slot": "16",
+      "time": "1.366462119"
+    },
+    {
+      "name": "test_post_object_upload_size_limit_exceeded",
+      "result": "success",
+      "slot": "29",
+      "time": "2.064256228"
+    },
+    {
+      "name": "test_post_object_invalid_content_length_argument",
+      "result": "success",
+      "slot": "6",
+      "time": "1.099911839"
+    },
+    {
+      "name": "test_post_object_empty_conditions",
+      "result": "success",
+      "slot": "12",
+      "time": "1.221336212"
+    },
+    {
+      "name": "test_get_object_ifnonematch_failed",
+      "result": "success",
+      "slot": "1",
+      "time": "2.183970721"
+    },
+    {
+      "name": "test_get_object_ifmatch_good",
+      "result": "success",
+      "slot": "10",
+      "time": "2.233706289"
+    },
+    {
+      "name": "test_post_object_upload_size_below_minimum",
+      "result": "success",
+      "slot": "5",
+      "time": "2.233770886"
+    },
+    {
+      "name": "test_get_object_ifunmodifiedsince_failed",
+      "result": "success",
+      "slot": "26",
+      "time": "1.492316863"
+    },
+    {
+      "name": "test_get_object_ifmodifiedsince_good",
+      "result": "success",
+      "slot": "21",
+      "time": "1.543674649"
+    },
+    {
+      "name": "test_put_object_ifmatch_good",
+      "result": "success",
+      "slot": "14",
+      "time": "1.545138955"
+    },
+    {
+      "name": "test_put_object_ifmatch_overwrite_existed_good",
+      "result": "success",
+      "slot": "9",
+      "time": ".764748312"
+    },
+    {
+      "name": "test_put_object_ifnonmatch_nonexisted_good",
+      "result": "success",
+      "slot": "30",
+      "time": "1.451550588"
+    },
+    {
+      "name": "test_object_delete_key_bucket_gone",
+      "result": "success",
+      "slot": "19",
+      "time": "1.492179489"
+    },
+    {
+      "name": "test_put_object_ifnonmatch_good",
+      "result": "success",
+      "slot": "11",
+      "time": "1.632440265"
+    },
+    {
+      "name": "test_bucket_head",
+      "result": "success",
+      "slot": "22",
+      "time": ".722306634"
+    },
+    {
+      "name": "test_bucket_head_notexist",
+      "result": "success",
+      "slot": "24",
+      "time": ".818549132"
+    },
+    {
+      "name": "test_object_raw_get_bucket_gone",
+      "result": "success",
+      "slot": "18",
+      "time": ".872065336"
+    },
+    {
+      "name": "test_object_raw_get_object_acl",
+      "result": "success",
+      "slot": "4",
+      "time": ".881673194"
+    },
+    {
+      "name": "test_object_raw_authenticated",
+      "result": "success",
+      "slot": "17",
+      "time": ".814618447"
+    },
+    {
+      "name": "test_object_raw_authenticated_object_gone",
+      "result": "success",
+      "slot": "7",
+      "time": "1.251943879"
+    },
+    {
+      "name": "test_object_raw_authenticated_bucket_acl",
+      "result": "success",
+      "slot": "25",
+      "time": "1.337030477"
+    },
+    {
+      "name": "test_object_raw_response_headers",
+      "result": "success",
+      "slot": "13",
+      "time": "1.348215582"
+    },
+    {
+      "name": "test_object_raw_authenticated_object_acl",
+      "result": "success",
+      "slot": "28",
+      "time": "1.351706240"
+    },
+    {
+      "name": "test_object_raw_authenticated_bucket_gone",
+      "result": "success",
+      "slot": "27",
+      "time": "2.059556473"
+    },
+    {
+      "name": "test_object_raw_get_x_amz_expires_out_positive_range",
+      "result": "success",
+      "slot": "2",
+      "time": "1.070967084"
+    },
+    {
+      "name": "test_object_raw_get_x_amz_expires_not_expired",
+      "result": "success",
+      "slot": "23",
+      "time": "2.074893108"
+    },
+    {
+      "name": "test_object_raw_get_x_amz_expires_out_range_zero",
+      "result": "success",
+      "slot": "20",
+      "time": "2.083095692"
+    },
+    {
+      "name": "test_object_raw_put_authenticated_expired",
+      "result": "success",
+      "slot": "6",
+      "time": ".373357220"
+    },
+    {
+      "name": "test_object_raw_get_x_amz_expires_out_max_range",
+      "result": "success",
+      "slot": "15",
+      "time": ".423206422"
+    },
+    {
+      "name": "test_object_anon_put_write_access",
+      "result": "success",
+      "slot": "8",
+      "time": ".458306473"
+    },
+    {
+      "name": "test_object_anon_put",
+      "result": "success",
+      "slot": "16",
+      "time": ".460588182"
+    },
+    {
+      "name": "test_bucket_create_naming_bad_starts_nonalpha",
+      "result": "success",
+      "slot": "12",
+      "time": ".566080415"
+    },
+    {
+      "name": "test_object_put_authenticated",
+      "result": "success",
+      "slot": "29",
+      "time": ".890808512"
+    },
+    {
+      "name": "test_bucket_create_naming_good_long_60",
+      "result": "success",
+      "slot": "1",
+      "time": ".555231178"
+    },
+    {
+      "name": "test_bucket_create_naming_bad_short_two",
+      "result": "success",
+      "slot": "10",
+      "time": ".896100576"
+    },
+    {
+      "name": "test_bucket_create_naming_good_long_61",
+      "result": "success",
+      "slot": "26",
+      "time": ".990717845"
+    },
+    {
+      "name": "test_bucket_create_naming_bad_short_one",
+      "result": "success",
+      "slot": "5",
+      "time": "1.045382514"
+    },
+    {
+      "name": "test_bucket_create_naming_good_long_63",
+      "result": "success",
+      "slot": "9",
+      "time": ".576281336"
+    },
+    {
+      "name": "test_bucket_create_naming_good_long_62",
+      "result": "success",
+      "slot": "21",
+      "time": ".581412791"
+    },
+    {
+      "name": "test_bucket_list_long_name",
+      "result": "success",
+      "slot": "14",
+      "time": ".997616350"
+    },
+    {
+      "name": "test_bucket_create_naming_dns_underscore",
+      "result": "success",
+      "slot": "30",
+      "time": ".507779794"
+    },
+    {
+      "name": "test_bucket_create_naming_bad_ip",
+      "result": "success",
+      "slot": "22",
+      "time": ".767417684"
+    },
+    {
+      "name": "test_bucket_create_naming_dns_dot_dot",
+      "result": "success",
+      "slot": "18",
+      "time": ".677369242"
+    },
+    {
+      "name": "test_bucket_create_naming_dns_dash_at_end",
+      "result": "success",
+      "slot": "11",
+      "time": ".719741150"
+    },
+    {
+      "name": "test_bucket_create_naming_dns_long",
+      "result": "success",
+      "slot": "19",
+      "time": ".732939485"
+    },
+    {
+      "name": "test_bucket_create_naming_dns_dot_dash",
+      "result": "success",
+      "slot": "24",
+      "time": ".863586973"
+    },
+    {
+      "name": "test_bucket_create_exists",
+      "result": "success",
+      "slot": "17",
+      "time": ".939890448"
+    },
+    {
+      "name": "test_bucket_create_naming_dns_dash_dot",
+      "result": "success",
+      "slot": "4",
+      "time": "1.018889466"
+    },
+    {
+      "name": "test_bucket_acl_canned_during_create",
+      "result": "success",
+      "slot": "28",
+      "time": "1.059424220"
+    },
+    {
+      "name": "test_bucket_acl_canned",
+      "result": "success",
+      "slot": "13",
+      "time": "1.105137743"
+    },
+    {
+      "name": "test_bucket_acl_default",
+      "result": "success",
+      "slot": "7",
+      "time": "1.313753204"
+    },
+    {
+      "name": "test_bucket_acl_canned_authenticatedread",
+      "result": "success",
+      "slot": "20",
+      "time": "1.341200062"
+    },
+    {
+      "name": "test_bucket_acl_canned_publicreadwrite",
+      "result": "success",
+      "slot": "25",
+      "time": ".525315332"
+    },
+    {
+      "name": "test_bucket_acl_canned_private_to_private",
+      "result": "success",
+      "slot": "27",
+      "time": ".548402835"
+    },
+    {
+      "name": "test_bucket_acl_grant_nonexist_user",
+      "result": "success",
+      "slot": "23",
+      "time": "1.020348493"
+    },
+    {
+      "name": "test_bucket_acl_grant_email_not_exist",
+      "result": "success",
+      "slot": "2",
+      "time": ".749143790"
+    },
+    {
+      "name": "test_buckets_create_then_list",
+      "result": "success",
+      "slot": "15",
+      "time": "1.982173349"
+    },
+    {
+      "name": "test_bucket_acl_revoke_all",
+      "result": "success",
+      "slot": "6",
+      "time": "1.017657915"
+    },
+    {
+      "name": "test_buckets_list_ctime",
+      "result": "success",
+      "slot": "8",
+      "time": "1.023852884"
+    },
+    {
+      "name": "test_list_buckets_bad_auth",
+      "result": "success",
+      "slot": "29",
+      "time": "1.226977689"
+    },
+    {
+      "name": "test_list_buckets_invalid_auth",
+      "result": "success",
+      "slot": "12",
+      "time": "1.231501563"
+    },
+    {
+      "name": "test_list_buckets_anonymous",
+      "result": "success",
+      "slot": "16",
+      "time": "1.232871623"
+    },
+    {
+      "name": "test_bucket_create_naming_good_contains_period",
+      "result": "success",
+      "slot": "5",
+      "time": "1.159107000"
+    },
+    {
+      "name": "test_bucket_create_naming_good_starts_alpha",
+      "result": "success",
+      "slot": "1",
+      "time": "1.188220457"
+    },
+    {
+      "name": "test_bucket_create_naming_good_starts_digit",
+      "result": "success",
+      "slot": "10",
+      "time": "1.213640622"
+    },
+    {
+      "name": "test_bucket_create_naming_good_contains_hyphen",
+      "result": "success",
+      "slot": "26",
+      "time": ".393894770"
+    },
+    {
+      "name": "test_bucket_recreate_not_overriding",
+      "result": "success",
+      "slot": "9",
+      "time": ".971907900"
+    },
+    {
+      "name": "test_basic_key_count",
+      "result": "failure",
+      "slot": "3",
+      "time": "12.958787634"
+    },
+    {
+      "name": "test_object_copy_zero_size",
+      "result": "success",
+      "slot": "22",
+      "time": ".928054703"
+    },
+    {
+      "name": "test_bucket_list_special_prefix",
+      "result": "success",
+      "slot": "21",
+      "time": "1.137628451"
+    },
+    {
+      "name": "test_object_copy_16m",
+      "result": "success",
+      "slot": "14",
+      "time": "1.364954133"
+    },
+    {
+      "name": "test_object_copy_diff_bucket",
+      "result": "success",
+      "slot": "11",
+      "time": "1.134371175"
+    },
+    {
+      "name": "test_object_copy_verify_contenttype",
+      "result": "success",
+      "slot": "19",
+      "time": "1.138190491"
+    },
+    {
+      "name": "test_object_copy_same_bucket",
+      "result": "success",
+      "slot": "30",
+      "time": "1.165569308"
+    },
+    {
+      "name": "test_object_copy_retaining_metadata",
+      "result": "success",
+      "slot": "18",
+      "time": "1.698273556"
+    },
+    {
+      "name": "test_object_copy_bucket_not_found",
+      "result": "success",
+      "slot": "24",
+      "time": "1.585089687"
+    },
+    {
+      "name": "test_object_copy_key_not_found",
+      "result": "success",
+      "slot": "17",
+      "time": ".384072630"
+    },
+    {
+      "name": "test_object_copy_versioned_url_encoding",
+      "result": "success",
+      "slot": "13",
+      "time": ".689642255"
+    },
+    {
+      "name": "test_object_copy_versioned_bucket",
+      "result": "success",
+      "slot": "4",
+      "time": "1.059483992"
+    },
+    {
+      "name": "test_object_copy_versioning_multipart_upload",
+      "result": "success",
+      "slot": "28",
+      "time": "2.049363290"
+    },
+    {
+      "name": "test_multipart_upload_empty",
+      "result": "success",
+      "slot": "7",
+      "time": "1.513833032"
+    },
+    {
+      "name": "test_multipart_copy_improper_range",
+      "result": "success",
+      "slot": "25",
+      "time": ".711488901"
+    },
+    {
+      "name": "test_multipart_upload_contents",
+      "result": "success",
+      "slot": "23",
+      "time": ".906369010"
+    },
+    {
+      "name": "test_multipart_upload_overwrite_existing_object",
+      "result": "success",
+      "slot": "2",
+      "time": "1.087168458"
+    },
+    {
+      "name": "test_multipart_upload_multiple_sizes",
+      "result": "success",
+      "slot": "20",
+      "time": "2.106257900"
+    },
+    {
+      "name": "test_abort_multipart_upload",
+      "result": "success",
+      "slot": "6",
+      "time": "1.196345344"
+    },
+    {
+      "name": "test_multipart_copy_versioned",
+      "result": "success",
+      "slot": "27",
+      "time": "4.374637855"
+    },
+    {
+      "name": "test_list_multipart_upload",
+      "result": "success",
+      "slot": "15",
+      "time": "2.199778149"
+    },
+    {
+      "name": "test_100_continue",
+      "result": "success",
+      "slot": "12",
+      "time": "1.354705779"
+    },
+    {
+      "name": "test_multipart_upload_missing_part",
+      "result": "success",
+      "slot": "8",
+      "time": "1.358294871"
+    },
+    {
+      "name": "test_multipart_upload_incorrect_etag",
+      "result": "success",
+      "slot": "29",
+      "time": ".479937557"
+    },
+    {
+      "name": "test_atomic_read_1mb",
+      "result": "success",
+      "slot": "1",
+      "time": "1.316273389"
+    },
+    {
+      "name": "test_atomic_read_4mb",
+      "result": "success",
+      "slot": "5",
+      "time": "1.190472525"
+    },
+    {
+      "name": "test_atomic_read_8mb",
+      "result": "success",
+      "slot": "26",
+      "time": "1.251971958"
+    },
+    {
+      "name": "test_atomic_write_1mb",
+      "result": "success",
+      "slot": "3",
+      "time": "1.273560219"
+    },
+    {
+      "name": "test_atomic_write_4mb",
+      "result": "success",
+      "slot": "9",
+      "time": "1.346322234"
+    },
+    {
+      "name": "test_cors_origin_wildcard",
+      "result": "success",
+      "slot": "16",
+      "time": "3.864851513"
+    },
+    {
+      "name": "test_cors_header_option",
+      "result": "success",
+      "slot": "10",
+      "time": "4.468762220"
+    },
+    {
+      "name": "test_atomic_dual_write_1mb",
+      "result": "success",
+      "slot": "21",
+      "time": "1.773167897"
+    },
+    {
+      "name": "test_atomic_write_8mb",
+      "result": "success",
+      "slot": "22",
+      "time": "2.305601843"
+    },
+    {
+      "name": "test_atomic_dual_write_4mb",
+      "result": "success",
+      "slot": "14",
+      "time": "1.717347521"
+    },
+    {
+      "name": "test_atomic_conditional_write_1mb",
+      "result": "success",
+      "slot": "19",
+      "time": "1.743284376"
+    },
+    {
+      "name": "test_atomic_dual_write_8mb",
+      "result": "success",
+      "slot": "11",
+      "time": "1.843713060"
+    },
+    {
+      "name": "test_atomic_multipart_upload_write",
+      "result": "success",
+      "slot": "18",
+      "time": ".996862718"
+    },
+    {
+      "name": "test_atomic_write_bucket_gone",
+      "result": "success",
+      "slot": "30",
+      "time": ".832789207"
+    },
+    {
+      "name": "test_ranged_request_response_code",
+      "result": "success",
+      "slot": "24",
+      "time": "1.020682882"
+    },
+    {
+      "name": "test_ranged_request_skip_leading_bytes_response_code",
+      "result": "success",
+      "slot": "13",
+      "time": ".662934684"
+    },
+    {
+      "name": "test_ranged_request_return_trailing_bytes_response_code",
+      "result": "success",
+      "slot": "4",
+      "time": ".699864261"
+    },
+    {
+      "name": "test_ranged_request_invalid_range",
+      "result": "success",
+      "slot": "28",
+      "time": ".520155165"
+    },
+    {
+      "name": "test_ranged_request_empty_object",
+      "result": "success",
+      "slot": "7",
+      "time": "2.038694894"
+    },
+    {
+      "name": "test_versioning_obj_create_versions_remove_all",
+      "result": "success",
+      "slot": "23",
+      "time": "3.049569732"
+    },
+    {
+      "name": "test_versioning_obj_create_read_remove_head",
+      "result": "success",
+      "slot": "2",
+      "time": "1.251104867"
+    },
+    {
+      "name": "test_versioning_multi_object_delete",
+      "result": "success",
+      "slot": "15",
+      "time": "1.306929715"
+    },
+    {
+      "name": "test_versioning_obj_list_marker",
+      "result": "success",
+      "slot": "27",
+      "time": "1.867011803"
+    },
+    {
+      "name": "test_versioning_copy_obj_version",
+      "result": "success",
+      "slot": "8",
+      "time": "2.011763452"
+    },
+    {
+      "name": "test_versioning_multi_object_delete_with_marker",
+      "result": "success",
+      "slot": "12",
+      "time": "1.909206254"
+    },
+    {
+      "name": "test_versioning_obj_create_overwrite_multipart",
+      "result": "success",
+      "slot": "6",
+      "time": "2.922144278"
+    },
+    {
+      "name": "test_versioning_multi_object_delete_with_marker_create",
+      "result": "success",
+      "slot": "29",
+      "time": "2.056565609"
+    },
+    {
+      "name": "test_versioning_obj_create_read_remove",
+      "result": "success",
+      "slot": "25",
+      "time": "5.077442744"
+    },
+    {
+      "name": "test_versioned_object_acl",
+      "result": "success",
+      "slot": "1",
+      "time": "1.252081926"
+    },
+    {
+      "name": "test_versioned_object_acl_no_version_specified",
+      "result": "success",
+      "slot": "5",
+      "time": "1.733678043"
+    },
+    {
+      "name": "test_versioned_concurrent_object_create_and_remove",
+      "result": "success",
+      "slot": "16",
+      "time": "1.710637576"
+    },
+    {
+      "name": "test_lifecycle_get",
+      "result": "success",
+      "slot": "3",
+      "time": ".976801711"
+    },
+    {
+      "name": "test_lifecycle_set",
+      "result": "success",
+      "slot": "9",
+      "time": ".991110352"
+    },
+    {
+      "name": "test_lifecycle_get_no_id",
+      "result": "success",
+      "slot": "10",
+      "time": ".524983763"
+    },
+    {
+      "name": "test_versioned_concurrent_object_create_concurrent_remove",
+      "result": "success",
+      "slot": "26",
+      "time": "2.629565893"
+    },
+    {
+      "name": "test_versioning_obj_create_versions_remove_special_names",
+      "result": "success",
+      "slot": "20",
+      "time": "8.647162181"
+    },
+    {
+      "name": "test_ranged_big_request_response_code",
+      "result": "success",
+      "slot": "17",
+      "time": "12.798778153"
+    },
+    {
+      "name": "test_lifecycle_id_too_long",
+      "result": "success",
+      "slot": "24",
+      "time": ".412745636"
+    },
+    {
+      "name": "test_lifecycle_same_id",
+      "result": "success",
+      "slot": "4",
+      "time": ".784162904"
+    },
+    {
+      "name": "test_lifecycle_set_date",
+      "result": "success",
+      "slot": "28",
+      "time": ".609425966"
+    },
+    {
+      "name": "test_lifecycle_invalid_status",
+      "result": "success",
+      "slot": "13",
+      "time": "1.649762857"
+    },
+    {
+      "name": "test_lifecycle_set_invalid_date",
+      "result": "success",
+      "slot": "7",
+      "time": "1.148601305"
+    },
+    {
+      "name": "test_lifecycle_expiration_header_put",
+      "result": "success",
+      "slot": "27",
+      "time": "1.302574645"
+    },
+    {
+      "name": "test_lifecycle_expiration_days0",
+      "result": "success",
+      "slot": "2",
+      "time": "1.444755920"
+    },
+    {
+      "name": "test_lifecycle_set_noncurrent",
+      "result": "success",
+      "slot": "8",
+      "time": "1.166593023"
+    },
+    {
+      "name": "test_lifecycle_set_filter",
+      "result": "success",
+      "slot": "29",
+      "time": "1.295491239"
+    },
+    {
+      "name": "test_lifecycle_set_deletemarker",
+      "result": "success",
+      "slot": "6",
+      "time": "1.296774347"
+    },
+    {
+      "name": "test_lifecycle_set_multipart",
+      "result": "success",
+      "slot": "25",
+      "time": ".938647445"
+    },
+    {
+      "name": "test_lifecycle_set_empty_filter",
+      "result": "success",
+      "slot": "12",
+      "time": "1.105956295"
+    },
+    {
+      "name": "test_lifecycle_transition_set_invalid_date",
+      "result": "success",
+      "slot": "5",
+      "time": "1.741391635"
+    },
+    {
+      "name": "test_lifecycle_set_noncurrent_transition",
+      "result": "success",
+      "slot": "9",
+      "time": "1.028582255"
+    },
+    {
+      "name": "test_lifecycle_transition",
+      "result": "success",
+      "slot": "16",
+      "time": "1.049929418"
+    },
+    {
+      "name": "test_lifecycle_transition_single_rule_multi_trans",
+      "result": "success",
+      "slot": "3",
+      "time": "1.078278572"
+    },
+    {
+      "name": "test_lifecycle_noncur_transition",
+      "result": "success",
+      "slot": "26",
+      "time": "1.031399321"
+    },
+    {
+      "name": "test_lifecycle_cloud_transition",
+      "result": "success",
+      "slot": "10",
+      "time": "1.101550999"
+    },
+    {
+      "name": "test_lifecycle_cloud_multiple_transition",
+      "result": "success",
+      "slot": "20",
+      "time": "1.114801656"
+    },
+    {
+      "name": "test_lifecycle_noncur_cloud_transition",
+      "result": "success",
+      "slot": "17",
+      "time": "1.117805719"
+    },
+    {
+      "name": "test_encryption_sse_c_invalid_md5",
+      "result": "success",
+      "slot": "4",
+      "time": ".715116249"
+    },
+    {
+      "name": "test_lifecycle_cloud_transition_large_obj",
+      "result": "success",
+      "slot": "24",
+      "time": "1.381669803"
+    },
+    {
+      "name": "test_encryption_sse_c_no_key",
+      "result": "success",
+      "slot": "28",
+      "time": "1.743825484"
+    },
+    {
+      "name": "test_encryption_sse_c_no_md5",
+      "result": "success",
+      "slot": "13",
+      "time": ".802892705"
+    },
+    {
+      "name": "test_encryption_key_no_sse_c",
+      "result": "success",
+      "slot": "27",
+      "time": ".960382663"
+    },
+    {
+      "name": "test_encryption_sse_c_multipart_invalid_chunks_1",
+      "result": "success",
+      "slot": "7",
+      "time": "1.064283580"
+    },
+    {
+      "name": "test_encryption_sse_c_multipart_invalid_chunks_2",
+      "result": "success",
+      "slot": "2",
+      "time": "1.086910336"
+    },
+    {
+      "name": "test_sse_kms_no_key",
+      "result": "success",
+      "slot": "6",
+      "time": "1.293181194"
+    },
+    {
+      "name": "test_sse_kms_read_declare",
+      "result": "success",
+      "slot": "8",
+      "time": ".968491704"
+    },
+    {
+      "name": "test_bucket_policy",
+      "result": "success",
+      "slot": "29",
+      "time": ".994307281"
+    },
+    {
+      "name": "test_object_lock_put_obj_lock_invalid_bucket",
+      "result": "success",
+      "slot": "10",
+      "time": "1.370966509"
+    },
+    {
+      "name": "test_bucketv2_policy",
+      "result": "success",
+      "slot": "12",
+      "time": ".956387249"
+    },
+    {
+      "name": "test_bucketv2_policy_different_tenant",
+      "result": "success",
+      "slot": "25",
+      "time": ".958015382"
+    },
+    {
+      "name": "test_bucket_policy_another_bucket",
+      "result": "success",
+      "slot": "5",
+      "time": "1.394450550"
+    },
+    {
+      "name": "test_bucketv2_policy_another_bucket",
+      "result": "success",
+      "slot": "9",
+      "time": "1.608662195"
+    },
+    {
+      "name": "test_put_excess_tags",
+      "result": "success",
+      "slot": "3",
+      "time": "1.289437132"
+    },
+    {
+      "name": "test_put_excess_val_tags",
+      "result": "success",
+      "slot": "26",
+      "time": "1.289309151"
+    },
+    {
+      "name": "test_put_excess_key_tags",
+      "result": "success",
+      "slot": "16",
+      "time": "1.354836878"
+    },
+    {
+      "name": "test_post_object_tags_authenticated_request",
+      "result": "success",
+      "slot": "20",
+      "time": "1.366979528"
+    },
+    {
+      "name": "test_object_lock_suspend_versioning",
+      "result": "success",
+      "slot": "17",
+      "time": ".494238947"
+    },
+    {
+      "name": "test_object_lock_get_obj_retention_invalid_bucket",
+      "result": "success",
+      "slot": "13",
+      "time": ".495591685"
+    },
+    {
+      "name": "test_object_lock_get_obj_lock_invalid_bucket",
+      "result": "success",
+      "slot": "4",
+      "time": ".502450778"
+    },
+    {
+      "name": "test_object_lock_put_legal_hold_invalid_bucket",
+      "result": "success",
+      "slot": "28",
+      "time": ".541061450"
+    },
+    {
+      "name": "test_object_lock_put_obj_retention_invalid_bucket",
+      "result": "success",
+      "slot": "24",
+      "time": "1.153035195"
+    },
+    {
+      "name": "test_object_lock_get_legal_hold_invalid_bucket",
+      "result": "success",
+      "slot": "27",
+      "time": "1.867786622"
+    },
+    {
+      "name": "test_copy_object_ifnonematch_failed",
+      "result": "success",
+      "slot": "2",
+      "time": "1.907121511"
+    },
+    {
+      "name": "test_lifecycle_expiration_versioning_enabled",
+      "result": "success",
+      "slot": "22",
+      "time": "31.114666850"
+    },
+    {
+      "name": "test_copy_object_ifmatch_good",
+      "result": "success",
+      "slot": "7",
+      "time": "1.306239319"
+    },
+    {
+      "name": "test_lifecycle_expiration_tags1",
+      "result": "success",
+      "slot": "19",
+      "time": "31.097062914"
+    },
+    {
+      "name": "test_get_bucket_policy_status",
+      "result": "success",
+      "slot": "6",
+      "time": "1.269243067"
+    },
+    {
+      "name": "test_get_public_acl_bucket_policy_status",
+      "result": "success",
+      "slot": "8",
+      "time": ".566215487"
+    },
+    {
+      "name": "test_get_publicpolicy_acl_bucket_policy_status",
+      "result": "success",
+      "slot": "10",
+      "time": ".909788543"
+    },
+    {
+      "name": "test_get_authpublic_acl_bucket_policy_status",
+      "result": "success",
+      "slot": "29",
+      "time": ".927026845"
+    },
+    {
+      "name": "test_lifecycle_expiration_tags2",
+      "result": "success",
+      "slot": "11",
+      "time": "31.278830276"
+    },
+    {
+      "name": "test_lifecycle_expiration_versioned_tags2",
+      "result": "success",
+      "slot": "18",
+      "time": "31.472231471"
+    },
+    {
+      "name": "test_get_nonpublicpolicy_deny_bucket_policy_status",
+      "result": "success",
+      "slot": "25",
+      "time": ".829067738"
+    },
+    {
+      "name": "test_get_nonpublicpolicy_acl_bucket_policy_status",
+      "result": "success",
+      "slot": "12",
+      "time": ".863656149"
+    },
+    {
+      "name": "test_lifecycle_expiration_date",
+      "result": "success",
+      "slot": "23",
+      "time": "31.474173815"
+    },
+    {
+      "name": "test_get_default_public_block",
+      "result": "success",
+      "slot": "9",
+      "time": "1.535947281"
+    },
+    {
+      "name": "test_block_public_policy",
+      "result": "success",
+      "slot": "16",
+      "time": ".786603890"
+    },
+    {
+      "name": "test_block_public_put_bucket_acls",
+      "result": "success",
+      "slot": "3",
+      "time": ".797510043"
+    },
+    {
+      "name": "test_put_public_block",
+      "result": "success",
+      "slot": "5",
+      "time": ".809341021"
+    },
+    {
+      "name": "test_put_bucket_encryption_kms",
+      "result": "success",
+      "slot": "17",
+      "time": ".645942173"
+    },
+    {
+      "name": "test_put_bucket_encryption_s3",
+      "result": "success",
+      "slot": "20",
+      "time": ".741599214"
+    },
+    {
+      "name": "test_get_bucket_encryption_s3",
+      "result": "success",
+      "slot": "4",
+      "time": ".768021951"
+    },
+    {
+      "name": "test_multipart_upload_on_a_bucket_with_policy",
+      "result": "success",
+      "slot": "26",
+      "time": "1.845493328"
+    },
+    {
+      "name": "test_get_bucket_encryption_kms",
+      "result": "success",
+      "slot": "13",
+      "time": "1.226566848"
+    },
+    {
+      "name": "test_lifecycle_noncur_expiration",
+      "result": "success",
+      "slot": "15",
+      "time": "51.407539160"
+    },
+    {
+      "name": "test_lifecyclev2_expiration",
+      "result": "success",
+      "slot": "14",
+      "time": "70.987116638"
+    },
+    {
+      "name": "test_lifecycle_expiration",
+      "result": "success",
+      "slot": "21",
+      "time": "70.992676380"
+    },
+    {
+      "name": "test_lifecycle_expiration_noncur_tags1",
+      "result": "success",
+      "slot": "30",
+      "time": "70.758584040"
+    },
+    {
+      "name": "test_lifecycle_deletemarker_expiration",
+      "result": "success",
+      "slot": "1",
+      "time": "71.205759667"
+    }
+  ]
+}
