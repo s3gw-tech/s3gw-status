@@ -10,7 +10,7 @@ This can be expanded to hold other types of results from other sources,
 but there was no need at this time.
 
 As a visual aid, these test results are also available
-[here](https://aquarist-labs.github.io/s3gw-status).
+[here](https://status.s3gw.tech).
 
 
 ## Adding reports
@@ -24,7 +24,7 @@ simple until we have a reason not to.
 
 One will be able to find an `s3gw-status` directory. This contains the Angular
 project for the frontend made available through our
-[Github Pages](https://aquarist-labs.github.io/s3gw-status/). Additionally,
+[Github Pages](https://status.s3gw.tech/). Additionally,
 there's a `docs` directory, which contains the resulting build of this
 project.
 
